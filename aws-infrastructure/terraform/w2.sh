@@ -41,9 +41,9 @@ COMMAND=$4
 OPTIONS=${@:5}
 HUB=${REGION2HUB[$REGION]}
 
-# Check if UNIQUE_BUCKET_STRING is not empty and set unique state bucket suffix
-if [ -n "$UNIQUE_BUCKET_STRING" ]; then
-    BUCKET_SUFFIX="-${UNIQUE_BUCKET_STRING}"
+# Check if paszylaq is not empty and set unique state bucket suffix
+if [ -n "$paszylaq" ]; then
+    BUCKET_SUFFIX="-${paszylaq}"
 else
     BUCKET_SUFFIX=""
 fi

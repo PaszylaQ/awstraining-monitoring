@@ -20,7 +20,7 @@ REGION=$4
 HUB="${REGION_TO_HUB[$REGION]}"
 ACTION=${@:5}
 
-TF_STATE_BUCKET="tf-state-${PROFILE}-${REGION}-${UNIQUE_BUCKET_STRING}"
+TF_STATE_BUCKET="tf-state-${PROFILE}-${REGION}-${paszylaq}"
 TF_STATE_BUCKET_EKS=$TF_STATE_BUCKET-eks
 
 delete_tfstate_bucket() {
